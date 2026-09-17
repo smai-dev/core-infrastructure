@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: core-root-ca
+  namespace: cert-manager
+spec:
+  isCA: true
+  commonName: core-cluster-root-ca
+  secretName: core-root-ca
+  duration: 87600h
+  renewal:
+    policy: Disabled
+  privateKey:
+    algorithm: ECDSA
+    size: 384
+  issuerRef:
+    name: core-selfsigned-bootstrap
+    kind: ClusterIssuer
+    group: cert-manager.io
