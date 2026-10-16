@@ -1,9 +1,7 @@
-# Core Infrastructure
+# Cloud Infrastructure & GitOps
 
-Private declarative infrastructure for the local core platform.
+Designed and implemented Kubernetes-based infrastructure using K3s, Flux, Forgejo, Caddy, and WireGuard, with declarative configuration, GitOps automation, and secure service connectivity.
 
-This repository will become the source of truth for Kubernetes and shared
-platform infrastructure after the Flux bootstrap.
+Focused on reproducible deployments, automated reconciliation, workload isolation, and reliable cloud-native service integration.
 
-Operational credentials, private keys, kubeconfigs, WireGuard secrets, K3s
-tokens, and unencrypted Kubernetes Secret values must not be committed.
+Applied security-conscious infrastructure practices, including controlled access, network isolation, and protection of sensitive configuration.
